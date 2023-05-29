@@ -1,10 +1,28 @@
 @import "../Variables/Variables";
 
-
 .image-border{
-    background-color: $blueMain;
+    background-color: $blueAccentDark;
+    margin-top: 100px;
 
     .image-border-light {
-        background-color: $blueAccentLight;
+        background-color: $blueMain;
     }
+
+    .image-man{
+        height: 400px;
+        width: auto;
+        
+        
+    }
+}
+
+.text-container {
+    .get-started{
+        color: $yellowAccentDark;
+    }
+    .icons{
+        color: $yellowAccentDark
+        
+    }
+    
 }
