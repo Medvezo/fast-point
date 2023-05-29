@@ -1,0 +1,34 @@
+$yellowMain: #fec645;
+$blueMain: #53b1dd;
+$blueAccentLight: #4DEBC7;
+$headerFont: 'Georgia', serif;
+
+
+@mixin flexCenter(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin backgroundImage($path){
+    background-image: url($path);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+@mixin verticalText(){
+    writing-mode: vertical-lr;
+}
+
+@mixin gradientText($color1, $color2){
+    background: linear-gradient(to right, $color1, $color2);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@mixin appearAnimation($animationName, $animationTime, $delayTime){
+    animation: $animationName 1s ease-in 1s;
+    pointer-events: none;
+    opacity: 0;
+}

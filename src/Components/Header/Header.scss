@@ -1,0 +1,22 @@
+@import "../Variables/Variables.scss";
+
+.logo {
+	position: relative;
+	left: 100px;
+	top: 5px;
+	height: 10px;
+	transition: all 1s ease-in;
+	transform: scale(7);
+}
+
+.login-button {
+	background-color: $blueAccentLight;
+    border-radius: 10px;
+    height: 25px;
+    width: 70px;
+    transition: all 0.3s ease;
+    &:hover{
+        background-color: $blueMain;
+        transform: scale(1.05);
+    }
+}
