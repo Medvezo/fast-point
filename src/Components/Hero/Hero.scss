@@ -1,0 +1,41 @@
+@import "../Variables/Variables";
+
+.main-container {
+    @include flexCenter;
+    overflow: hidden;
+    
+    .scooter-photo{
+        height: 750px;
+        width: auto;
+        position: relative;
+        left: 500px;
+        background-color: $blueMain;
+        border-radius: 100px;
+    }
+
+    .main-text{
+        background-color: $yellowMain;
+        border-radius: 100px;
+    }
+    
+    .button-primary{
+        background-color: $blueMain;
+        transition: all 0.3s ease;
+
+        &:hover{
+            background-color: $blueAccentLight;
+        }
+    }
+
+}
+.arrow-down{
+    width: auto;
+    height: 100px;
+    @include flexCenter;
+    position: relative;
+    bottom: 100px;
+    left: 930px;
+    animation: arrow-down 1s ease ;
+    
+    
+}

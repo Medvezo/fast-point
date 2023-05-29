@@ -10,13 +10,13 @@
 }
 
 .login-button {
-	background-color: $blueAccentLight;
+	background-color: $blueMain;
     border-radius: 10px;
     height: 25px;
     width: 70px;
     transition: all 0.3s ease;
     &:hover{
-        background-color: $blueMain;
+        background-color: $blueAccentLight;
         transform: scale(1.05);
     }
 }

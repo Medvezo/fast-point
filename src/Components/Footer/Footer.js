@@ -1,30 +1,11 @@
 import React from "react";
+import logo from '../../Assets/logo.png'
 
 const navigation = {
-	solutions: [
-		{ name: "Marketing", href: "#" },
-		{ name: "Analytics", href: "#" },
-		{ name: "Commerce", href: "#" },
-		{ name: "Insights", href: "#" },
-	],
-	support: [
-		{ name: "Pricing", href: "#" },
-		{ name: "Documentation", href: "#" },
-		{ name: "Guides", href: "#" },
-		{ name: "API Status", href: "#" },
-	],
-	company: [
-		{ name: "About", href: "#" },
-		{ name: "Blog", href: "#" },
-		{ name: "Jobs", href: "#" },
-		{ name: "Press", href: "#" },
-		{ name: "Partners", href: "#" },
-	],
-	legal: [
-		{ name: "Claim", href: "#" },
-		{ name: "Privacy", href: "#" },
-		{ name: "Terms", href: "#" },
-	],
+	solutions: [],
+	support: [],
+	company: [],
+	legal: [],
 	social: [
 		{
 			name: "Facebook",
@@ -52,8 +33,6 @@ const navigation = {
 				</svg>
 			),
 		},
-		
-		
 	],
 };
 
@@ -68,12 +47,11 @@ export default function Footer() {
 					<div className="space-y-8">
 						<img
 							className="h-7"
-							src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+							src={logo}
 							alt="Company name"
 						/>
 						<p className="text-sm leading-6 text-gray-300">
-							Making the world a better place through constructing elegant
-							hierarchies.
+							Making the world a better place through making transporation easier and cheaper.
 						</p>
 						<div className="flex space-x-6">
 							{navigation.social.map((item) => (
@@ -91,7 +69,7 @@ export default function Footer() {
 						<div className="md:grid md:grid-cols-2 md:gap-8">
 							<div>
 								<h3 className="text-sm font-semibold leading-6 text-white">
-									Solutions
+									Pricing
 								</h3>
 								<ul role="list" className="mt-6 space-y-4">
 									{navigation.solutions.map((item) => (
@@ -107,7 +85,7 @@ export default function Footer() {
 							</div>
 							<div className="mt-10 md:mt-0">
 								<h3 className="text-sm font-semibold leading-6 text-white">
-									Support
+									About
 								</h3>
 								<ul role="list" className="mt-6 space-y-4">
 									{navigation.support.map((item) => (
@@ -125,7 +103,7 @@ export default function Footer() {
 						<div className="md:grid md:grid-cols-2 md:gap-8">
 							<div>
 								<h3 className="text-sm font-semibold leading-6 text-white">
-									Company
+									FAQ
 								</h3>
 								<ul role="list" className="mt-6 space-y-4">
 									{navigation.company.map((item) => (
@@ -141,7 +119,7 @@ export default function Footer() {
 							</div>
 							<div className="mt-10 md:mt-0">
 								<h3 className="text-sm font-semibold leading-6 text-white">
-									Legal
+									Contact
 								</h3>
 								<ul role="list" className="mt-6 space-y-4">
 									{navigation.legal.map((item) => (
@@ -160,7 +138,7 @@ export default function Footer() {
 				</div>
 				<div className="mt-16 border-t border-white/10 pt-8 sm:mt-20 lg:mt-24">
 					<p className="text-xs leading-5 text-gray-400">
-						&copy; 2020 Your Company, Inc. All rights reserved.
+						&copy; 2023 Your Company, Inc. All rights reserved.
 					</p>
 				</div>
 			</div>

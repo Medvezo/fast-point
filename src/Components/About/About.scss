@@ -1,0 +1,10 @@
+@import "../Variables/Variables";
+
+
+.image-border{
+    background-color: $blueMain;
+
+    .image-border-light {
+        background-color: $blueAccentLight;
+    }
+}

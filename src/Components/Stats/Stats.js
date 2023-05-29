@@ -1,16 +1,19 @@
 import React from "react";
 
 const stats = [
-	{ id: 1, name: "Transactions every 24 hours", value: "44 million" },
-	{ id: 2, name: "Assets under holding", value: "$119 trillion" },
-	{ id: 3, name: "New users annually", value: "46,000" },
+	{ id: 1, name: "Number of Active Users", value: "2000+" },
+	{ id: 2, name: "Distance Traveled", value: "10000km+" },
+	{ id: 4, name: "New users monthly", value: "300+" },
+	{ id: 3, name: "CO2 Emissions Saved", value: "1.2 ton" },
+
 ];
 
 export default function Stats() {
 	return (
 		<div className="bg-white py-24 sm:py-32">
+			<h2 className="text-5xl font-bold mb-52" >Statistics Tells the Truth!</h2>
 			<div className="mx-auto max-w-7xl px-6 lg:px-8">
-				<dl className="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
+				<dl className="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-4">
 					{stats.map((stat) => (
 						<div
 							key={stat.id}

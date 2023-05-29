@@ -3,7 +3,7 @@ import { CheckIcon } from "@heroicons/react/20/solid";
 
 const tiers = [
 	{
-		name: "Freelancer",
+		name: "Monthly",
 		id: "tier-freelancer",
 		href: "#",
 		priceMonthly: "$24",
@@ -17,7 +17,7 @@ const tiers = [
 		mostPopular: false,
 	},
 	{
-		name: "Startup",
+		name: "Seasonal",
 		id: "tier-startup",
 		href: "#",
 		priceMonthly: "$32",
@@ -32,7 +32,7 @@ const tiers = [
 		mostPopular: true,
 	},
 	{
-		name: "Enterprise",
+		name: "Annual",
 		id: "tier-enterprise",
 		href: "#",
 		priceMonthly: "$48",
@@ -61,13 +61,10 @@ export default function Example() {
 						Pricing
 					</h2>
 					<p className="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-						Pricing plans for teams of&nbsp;all&nbsp;sizes
+						Pricing plans for your preferences
 					</p>
 				</div>
-				<p className="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-gray-600">
-					Distinctio et nulla eum soluta et neque labore quibusdam. Saepe et
-					quasi iusto modi velit ut non voluptas in. Explicabo id ut laborum.
-				</p>
+				
 				<div className="isolate mx-auto mt-16 grid max-w-md grid-cols-1 gap-y-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
 					{tiers.map((tier, tierIdx) => (
 						<div
