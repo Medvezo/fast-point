@@ -1,5 +1,5 @@
 import React from "react";
-import Scooter from '../../Assets/escooterHome.png'
+import Scooter from '../../Assets/escooterHome-min.png'
 import ArrowDown from '../../Assets/Down-Arrow-PNG-HD.png'
 import './Hero.scss'
 
