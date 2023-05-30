@@ -52,10 +52,10 @@ export default function Contact() {
 								/>
 							</svg>
 						</div>
-						<h2 className="text-3xl font-bold tracking-tight text-gray-900">
+						<h2 className="text-3xl font-bold tracking-tight text-yellow-500">
 							Get in touch
 						</h2>
-						<p className="mt-6 text-lg leading-8 text-gray-600">For general issues, please email us. We strive to respond to all emails within 24 hours. Or Reach us directly by phone. Our customer service team is available from Monday to Friday, 9:00 AM to 6:00 PM.</p>
+						<p className="mt-6 text-lg leading-8 text-gray-600">For general issues, please email us. We strive to respond to all emails within <span className="font-semibold text-blue-600">24 hours</span>. Or Reach us directly by phone. Our customer service team is available from <span className="font-semibold text-blue-600">Monday to Friday, 9:00 AM to 6:00 PM</span>.</p>
 						<dl className="mt-10 space-y-4 text-base leading-7 text-gray-600">
 							<div className="flex gap-x-4">
 								<dt className="flex-none">
