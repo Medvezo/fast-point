@@ -1,0 +1,14 @@
+@import "../Variables/Variables";
+
+.main-text{
+    .most-popular{
+        background-color: $yellowMain;
+        }
+    .most-popular-text{
+        color: $blueAccentDark;
+        background-color: $blueAccentLight;
+    }
+    .seasonal-text{
+        color: $blueAccentDark;
+    }
+}

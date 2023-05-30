@@ -1,18 +1,20 @@
 import React from "react";
 import { CheckIcon } from "@heroicons/react/20/solid";
+import './Pricing.scss'
 
 const tiers = [
 	{
 		name: "Monthly",
 		id: "tier-freelancer",
 		href: "#",
-		priceMonthly: "$24",
-		description: "The essentials to provide your best work for clients.",
+		priceMonthly: "₼ 45",
+		description:
+			"Perfect for the adventurous city explorer looking for a flexible and short-term mode of transport.",
 		features: [
-			"5 products",
-			"Up to 1,000 subscribers",
-			"Basic analytics",
-			"48-hour support response time",
+			"No commitment",
+			"Affordable for frequent users",
+			"Quick start",
+			"Navigates city traffic easily",
 		],
 		mostPopular: false,
 	},
@@ -20,14 +22,14 @@ const tiers = [
 		name: "Seasonal",
 		id: "tier-startup",
 		href: "#",
-		priceMonthly: "$32",
-		description: "A plan that scales with your rapidly growing business.",
+		priceMonthly: "₼ 30",
+		description:
+			"Tailored for the seasonal rider seeking a convenient mode of transport for a few months.",
 		features: [
-			"25 products",
-			"Up to 10,000 subscribers",
-			"Advanced analytics",
-			"24-hour support response time",
-			"Marketing automations",
+			"Great for seasonal riders",
+			"Better value for money.",
+			"Extended trial",
+			"No monthly renewals",
 		],
 		mostPopular: true,
 	},
@@ -35,14 +37,13 @@ const tiers = [
 		name: "Annual",
 		id: "tier-enterprise",
 		href: "#",
-		priceMonthly: "$48",
-		description: "Dedicated support and infrastructure for your company.",
+		priceMonthly: "₼ 24",
+		description: "For committed urban commuter looking for a sustainable and economical transportation solution all year round.",
 		features: [
-			"Unlimited products",
-			"Unlimited subscribers",
-			"Advanced analytics",
-			"1-hour, dedicated support response time",
-			"Marketing automations",
+			"Maximum savings",
+			"Reliable year-round transport",
+			"One-time payment.",
+			"No renewal hassles.",
 		],
 		mostPopular: false,
 	},
@@ -57,36 +58,36 @@ export default function Example() {
 		<div className="bg-white py-24 sm:py-32">
 			<div className="mx-auto max-w-7xl px-6 lg:px-8">
 				<div className="mx-auto max-w-4xl text-center">
-					<h2 className="text-base font-semibold leading-7 text-indigo-600">
+					<h2 className="text-base font-semibold leading-7 text-yellow-600">
 						Pricing
 					</h2>
 					<p className="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
 						Pricing plans for your preferences
 					</p>
 				</div>
-				
-				<div className="isolate mx-auto mt-16 grid max-w-md grid-cols-1 gap-y-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+
+				<div className="main-text isolate mx-auto mt-16 grid max-w-md grid-cols-1 gap-y-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
 					{tiers.map((tier, tierIdx) => (
 						<div
 							key={tier.id}
 							className={classNames(
-								tier.mostPopular ? "lg:z-10 lg:rounded-b-none" : "lg:mt-8",
+								tier.mostPopular ? "most-popular lg:z-10 lg:rounded-b-none" : "lg:mt-8",
 								tierIdx === 0 ? "lg:rounded-r-none" : "",
 								tierIdx === tiers.length - 1 ? "lg:rounded-l-none" : "",
-								"flex flex-col justify-between rounded-3xl bg-white p-8 ring-1 ring-gray-200 xl:p-10"
+								"flex flex-col justify-between rounded-3xl bg-yellow-100 p-8 ring-1 ring-gray-200 xl:p-10"
 							)}>
-							<div>
+							<div >
 								<div className="flex items-center justify-between gap-x-4">
 									<h3
 										id={tier.id}
 										className={classNames(
-											tier.mostPopular ? "text-indigo-600" : "text-gray-900",
-											"text-lg font-semibold leading-8"
+											tier.mostPopular ? "seasonal-text" : "text-gray-900",
+											"text-lg font-semibold leading-8 "
 										)}>
 										{tier.name}
 									</h3>
 									{tier.mostPopular ? (
-										<p className="rounded-full bg-indigo-600/10 px-2.5 py-1 text-xs font-semibold leading-5 text-indigo-600">
+										<p className="most-popular-text rounded-full px-2.5 py-1 text-xs font-semibold leading-5">
 											Most popular
 										</p>
 									) : null}
@@ -102,9 +103,7 @@ export default function Example() {
 										/month
 									</span>
 								</p>
-								<ul
-									role="list"
-									className="mt-8 space-y-3 text-sm leading-6 text-gray-600">
+								<ul className="mt-8 space-y-3 text-sm leading-6 text-gray-600">
 									{tier.features.map((feature) => (
 										<li key={feature} className="flex gap-x-3">
 											<CheckIcon
@@ -121,9 +120,9 @@ export default function Example() {
 								aria-describedby={tier.id}
 								className={classNames(
 									tier.mostPopular
-										? "bg-indigo-600 text-white shadow-sm hover:bg-indigo-500"
-										: "text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300",
-									"mt-8 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+										? "bg-blue-800 text-white shadow-sm hover:bg-blue-600"
+										: "text-blue-800 ring-1 ring-inset ring-blue-500 hover:ring-blue-800",
+									"mt-8 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
 								)}>
 								Buy plan
 							</a>
