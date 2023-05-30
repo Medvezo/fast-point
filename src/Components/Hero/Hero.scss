@@ -1,39 +1,63 @@
 @import "../Variables/Variables";
 
 .main-container {
-    @include flexCenter;
-    overflow: hidden;
-    
-    .scooter-photo{
-        height: 750px;
-        width: auto;
-        position: relative;
-        left: 500px;
-        background-color: $blueMain;
-        border-radius: 100px;
-    }
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	position: relative;
+	overflow: hidden;
 
-    .main-text{
-        background-color: $yellowMain;
-        border-radius: 100px;
-    }
-    
-    .button-primary{
-        background-color: $blueMain;
-        transition: all 0.3s ease;
+	.scooter-photo {
+		height: 750px;
+		width: auto;
+		position: absolute;
+		right: -22%;
+		background-color: $blueMain;
+		border-radius: 100px;
+	}
 
-        &:hover{
-            background-color: $blueAccentLight;
-        }
-    }
+	.main-text {
+		background-color: $yellowMain;
+		border-radius: 100px;
+		z-index: 100;
+	}
 
-}
-.arrow-down{
-    width: auto;
-    height: 100px;
-    @include flexCenter;
-    position: relative;
-    bottom: 100px;
-    left: 930px;
-    animation: arrow-down 1s ease ;
+	.button-primary {
+		background-color: $blueMain;
+		transition: all 0.3s ease;
+
+		&:hover {
+			background-color: $blueAccentLight;
+		}
+	}
+
+	.arrow-down {
+		position: absolute;
+		width: auto;
+		height: 100px;
+		bottom: 0;
+		left: 48%;
+	}
+
+	@keyframes arrow-down {
+		0% {
+			transform: translateY(0);
+		}
+		30% {
+			transform: translateY(-100px);
+		}
+		50% {
+			transform: translateY(0);
+		}
+		100% {
+			transform: translateY(0);
+		}
+	}
+
+    // Main container Hover
+    &:hover .arrow-down{
+        animation: arrow-down 5s infinite;
+        animation-play-state: running;
+
+    }
 }

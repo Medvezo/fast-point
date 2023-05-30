@@ -4,7 +4,7 @@ import {
 	QrCodeIcon,
 	RocketLaunchIcon,
 } from "@heroicons/react/20/solid";
-import manWithPhone from '../../Assets/manWithScooter/scooter-rental-1.JPG';
+import manWithPhone from '../../Assets/manWithScooter/scooter-rental-2.JPG';
 import './About.scss'
 
 const features = [
