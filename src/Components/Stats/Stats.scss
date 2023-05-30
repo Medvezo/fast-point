@@ -1,0 +1,11 @@
+@import "../Variables/Variables";
+
+.text-container {
+    .text-name{
+        color: $yellowAccentDark;
+    }
+
+    .text-value{
+        color: $blueAccentDark;
+    }
+}
