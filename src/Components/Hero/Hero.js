@@ -7,7 +7,7 @@ export default function Hero() {
 
 	return (
 		<div className="bg-white">
-			<div className="relative px-6 pt-14 lg:px-8  main-container">
+			<div className="relative mx-auto px-6 pt-14 lg:px-8  main-container">
 		
 				<div className=" max-w-2xl py-32 sm:py-48 lg:py-56 main-text">
 					<div className="text-center">

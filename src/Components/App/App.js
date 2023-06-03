@@ -20,9 +20,9 @@ function App() {
 			<Hero />
 			<About />
 			<Stats />
-			<Bonus />
 			<FAQ />
 			<Pricing />
+			<Bonus />
 			<Support />
 			<Contact />
 			<LogoCloud />
